@@ -14,7 +14,7 @@ export class Editoriales  extends BaseEntity{
     direccion:string;
 
     @Column()
-    Telefono: string;
+    telefono: string;
 
     @ManyToOne(type => Ciudades)
     @JoinColumn()

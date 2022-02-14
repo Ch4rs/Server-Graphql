@@ -13,11 +13,6 @@ export class Autores  extends BaseEntity{
     @Column()
     apellido:string;
 
-    /*
-    @ManyToOne(type => Cubiertas,cubierta =>Cubiertas.findOne(cubierta))
-    @JoinColumn()
-    cubierta: Cubiertas;
-    */
     @ManyToOne(type => Ciudades)
     @JoinColumn()
     ciudad: Ciudades;
