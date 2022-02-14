@@ -14,6 +14,8 @@ import { GET_ALL_TEMAS, GET_TEMAS } from "./Queries/Tema";
 import { CREATE_TEMA, DELETE_TEMA, UPDATE_TEMA } from "./Mutations/Temas";
 import { GET_ALL_EDITORIALES, GET_EDITORIALES } from "./Queries/Editorial";
 import { CREATE_EDITORIAL, DELETE_EDITORIAL, UPDATE_EDITORIAL } from "./Mutations/Editoriales";
+import { GET_ALL_LIBRO, GET_LIBRO } from "./Queries/Libro";
+import { CREATE_LIBRO, DELETE_LIBRO, UPDATE_LIBRO } from "./Mutations/Libros";
 const RootQuery = new GraphQLObjectType({
     name:'RootQuery',
     fields:{
@@ -30,7 +32,9 @@ const RootQuery = new GraphQLObjectType({
         getTema:GET_TEMAS,
         getAllTemas:GET_ALL_TEMAS,
         getEditorial:GET_EDITORIALES,
-        getAllEditoriales:GET_ALL_EDITORIALES
+        getAllEditoriales:GET_ALL_EDITORIALES,
+        getLibro:GET_LIBRO,
+        getAllLibros:GET_ALL_LIBRO
     }
 });
 
@@ -57,7 +61,10 @@ const Mutation = new GraphQLObjectType({
         deleteTema:DELETE_TEMA,
         createEditorial:CREATE_EDITORIAL,
         updateEditorial:UPDATE_EDITORIAL,
-        deleteEditorial:DELETE_EDITORIAL
+        deleteEditorial:DELETE_EDITORIAL,
+        createLibro:CREATE_LIBRO,
+        updateLibro:UPDATE_LIBRO,
+        deleteLibro:DELETE_LIBRO
     }
 
 })
