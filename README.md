@@ -1,2 +1,1 @@
-# Server Graphql
- 
+# graphql-backend-librery
